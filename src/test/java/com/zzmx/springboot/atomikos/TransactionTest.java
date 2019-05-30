@@ -28,8 +28,8 @@ public class TransactionTest extends AbstractTransactionalJUnit4SpringContextTes
 	@Test
 
 	public void test() {
-		sysJdbcTemplate.execute("insert into sys_a(id) values(1)");
-		busJdbcTemplate.execute("insert into bus_b(id) values(1)");
+		sysJdbcTemplate.execute("INSERT INTO `tcc`.`test_user` (name, age) VALUES ( 'lynn', '14');\n");
+		busJdbcTemplate.execute("INSERT INTO `tcc`.`test_user` (name, age) VALUES ( 'lynn', '14');\n");
 	}
 
 }

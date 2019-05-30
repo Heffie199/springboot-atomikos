@@ -20,8 +20,8 @@ public class TestController {
 	@RequestMapping("")
 	public void test() {
 		System.out.println("begin.....");
-		sysJdbcTemplate.execute("insert into sys_a(id) values(1)");
-		busJdbcTemplate.execute("insert into bus_b(id) values(2)");
+		sysJdbcTemplate.execute("insert into test_uesr(age) values(1)");
+		busJdbcTemplate.execute("insert into test_uesr(age) values(2)");
 		System.out.println("end.....");
 	}
 }
